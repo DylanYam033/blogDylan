@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <meta name="google" content="notranslate" />
+  <meta property="og:image" content="src/portfolio_img.png">
+  <title>DylanBlog</title>
+  <link rel="icon" href="/src/akatsuki.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Schoolbell&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://kit.fontawesome.com/e92fa48c98.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147891800-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-147891800-1');
+  </script>
+</head>
+<body class="body-page">
+  <!-- Main Hero -->
+  <section id= "principal" class="hero hero-princ is-fullheight">
+    <div class="hero-body">
+      <div class="lang-div">
+        <select id="lang-opt" onchange="selectLan(this)">
+          <option value="en">english</option>
+          <option value="es">spanish</option>
+        </select>
+      </div>
+      <div class="container hero-princ-container is-flex f-d-col center-y">
+        <img class="gif-animated" src="/src/gif/giphy.gif" alt="chibi gif">
+        <div class="hero-princ-content is-flex f-d-col center-y text">
+          <h1 class="title has-text-white has-text-centered">Dylan Yampuezan</h1>
+          <h2 class="subtitle has-text-grey-lighter"> Web Developer</h2>
+        </div>
+
+      </div>
+    </div>
+    <div class="hero-princ-footer">
+      <div class="container">
+        <ul class="menu is-flex center-x">
+          <a href="#about" class="no-deco">
+            <li class="en-opt">About</li>
+            <li class="es-opt">Acerca</li>
+          </a>
+          <li>/</li>
+          <a href="#skills" class="no-deco">
+            <li class="en-opt">Skills</li>
+            <li class="es-opt">Habilidades</li>
+          </a>
+          <li>/</li>
+          <a href="#projects" class="no-deco">
+            <li class="en-opt">Courses</li>
+            <li class="es-opt">Cursos</li>
+          </a>
+          <li>/</li>
+          <a href="#contact" onclick="toContact()" class="no-deco">
+            <li class="en-opt">Contact</li>
+            <li class="es-opt">Contacto</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="hero about" id="about">
+    <div class="columns about-columns">
+      <div class="column about col-1 is-flex center-y center-x">
+        <img src="/src/5e535e872b568af61d1d1e65_peep-sitting-5.png" alt="" width="500px">
+      </div>
+      <div class="column about col-2">
+        <div class="about-content">
+          <h3 class="subtitle is-3 en-opt">Hi!</h3>
+          <h3 class="subtitle is-3 es-opt">Hola!</h3>
+          <h5 class="subtitle is-5 en-opt">
+            I'm a technology student at Universidad del Valle systems, I'm passionate about technology<br>
+            In addition, I am very interested in web development and programming. In my spare time I ride a bike.
+            or I watch anime, I really like Japanese culture and mythologies, I always like to be in constant
+            learning, which is why I always take courses to strengthen my skills.
+          </h5>
+          <h5 class="subtitle is-5 es-opt">
+            Mi nombre es Dylan Yampuezan y a continuacion una breve descripcion sobre mi. Soy estudiante de tecnologia en sistemas
+            en la universidad del valle, desde muy pequeño me han gustado los videojuegos, por lo que siempre tuve cierta inclinacion por la
+            tecnologia, a partir de esto, me empezo a gustar y empece a investigar y a introducirme en el mundo tech.
+          </h5>
+          <img src="/src/WhatsApp Image 2022-07-05 at 3.56.13 PM.jpeg" class="about-img" alt="my photo">
+          <br>
+          <h6 class="subtitle is-6 en-opt">
+            I am currently in the 5th semester of the degree, in addition to this, I am strengthening technologies in front of and learning the python programming language,
+            once I master this language I want to complement it with Django to have deep knowledge about back-end development.
+          </h6>
+          <h6 class="subtitle is-6 es-opt">
+            Actualmente me encuentro cursando el 5to semestre de la carrera ademas de esto, estoy fortaleciendo tecnologias front y aprendiendo el lenguaje de programacion python,
+            una vez domine este lenguaje quiero complementarlo con Django para tener conocimientos profundos sobre desarrollo back-end.
+          </h6>
+          <h6 class="subtitle is-6 en-opt">
+            For now I am a student, however, I am learning more by taking courses of my interest on platforms
+            Like Platzi, since I decided to make the investment in this platform to further strengthen my skills.
+            Also thanks to the academic projects that I have carried out with my classmates I have been able to learn and consolidate
+            more knowledge and understand the workflows of a project.
+          </h6>
+          <h6 class="subtitle is-6 es-opt">
+            Por ahora soy estudiante, sin embargo, estoy aprendiendo mas realizando cursos de mi interes en plataformas
+            como platzi, ya que decidi hacer la inversion en esta plataforma para fortalecer mas mis habilidades. 
+            Tambien gracias a los proyectos academicos que he realizado con mis compañeros he podido aprender y afianzar
+            mas conocimientos y entender los flujos de trabajo de un proyecto.
+            <h6 class="subtitle is-6 en-opt">
+              Some of my favorite hobbies are riding a bike, watching anime, reading manga or playing video games and also
+              learn English, since I consider it important to know at least the basics of the language.
+            </h6>
+            <h6 class="subtitle is-6 es-opt">
+              Algunos de mis hobbies favoritos son montar bicicleta, ver anime, leer mangas o jugar videojuegos y tambien
+              aprender ingles, ya que considero que es importante saber al menos lo basico del idioma.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="hero skills" id="skills">
+    <div class="hero-body">
+      <div class="container skills">
+        <h1 class="title is-1 has-text-centered en-opt">What did I use in Tech?</h1>
+        <h1 class="title is-1 has-text-centered es-opt">¿Qué tecnologías he usado?</h1>
+        <div class="container programming">
+          <h3 class="title is-3 en-opt">Programming</h3>
+          <h3 class="title is-3 es-opt">Programación</h3>
+          <div class="columns skills">
+            <div class="img" data-desc="HTML 5">
+              <img src="src/skills/html5.png" alt="html5 image">
+            </div>
+            <div class="img" data-desc="CSS 3">
+              <img src="src/skills/css3.png" alt="css3 image">
+            </div>
+            <div class="img" data-desc="Javascript">
+              <img src="src/skills/javascript.png" alt="javascript image">
+            </div>
+            <div class="img" data-desc="C++">
+              <img src="src/skills/cplusplus.png" alt="C++ image">
+            </div>
+            <div class="img" data-desc="Python">
+              <img src="src/skills/python.png" alt="Python image">
+            </div>
+          </div>
+        </div>
+        <div class="see-more-skills is-flex center-x">
+          <a class="button is-rounded skills-more-btn no-deco" onclick="seeMoreSkills()">
+            See More
+          </a>
+        </div>
+        <div class="more-skills d-none">
+          <div class="container css-libraries">
+            <h3 class="title is-3 en-opt">Frameworks</h3>
+            <h3 class="title is-3 es-opt">Frameworks</h3>
+            <div class="columns skills">
+              <div class="img" data-desc="Bootstrap">
+                <img src="src/skills/bootstrap.png" alt="Bootstrap image">
+              </div>
+              <div class="img" data-desc="node.js">
+                <img src="src/skills/node.png" alt="nodejs image">
+              </div>
+            </div>
+          </div>
+          <div class="container css-libraries">
+            <h3 class="title is-3 en-opt">Web Sites</h3>
+            <h3 class="title is-3 es-opt">Sitios Web</h3>
+            <div class="columns skills">
+              <div class="img" data-desc="Wix">
+                <img src="src/skills/wix.png" alt="Wix image">
+              </div>
+            </div>
+          </div>
+          <div class="container css-tools">
+            <h3 class="title is-3 en-opt">Tools</h3>
+            <h3 class="title is-3 es-opt">Herramientas</h3>
+            <div class="columns skills">
+              <div class="img" data-desc="Elementor">
+                <img src="src/skills/vscode.png" alt="Elementor image">
+              </div>
+              <div class="img" data-desc="GIT">
+                <img src="src/skills/git.png" alt="GIT image">
+              </div>
+              <div class="img" data-desc="MySql">
+                <img src="src/skills/sql.png" alt="sql image">
+              </div>
+              <div class="img" data-desc="GitHub">
+                <img src="/src/GitHub-Mark-64px.png" alt="sql image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="hero projects" id="projects">
+    <div class="hero-body">
+      <div class="container projects-wrapper is-flex f-d-col center-x">
+        <h1 class="title is-1 has-text-centered en-opt">Platzi Courses</h1>
+        <h1 class="title is-1 has-text-centered es-opt">Cursos Platzi</h1>
+        <div class="all-projects is-flex center-x center-y f-d-col">
+
+          <div class="container projects">
+            <!-- FRONTEND DEVELOPER -->
+            <div class="column project has-text-centered en-opt">
+              <div 
+                class="img-container" 
+                onclick="showProject(this)" 
+                data-title="FRONTEND DEVELOPER"
+                data-link="https://platzi.com/cursos/frontend-developer/"
+                data-desc="Master the basics of HTML and CSS. Learn about the anatomy of an HTML document, 
+                its elements, and CSS properties. Mock up the main screens 
+                of your website with responsive design. Become a Frontend Developer with Platzi."
+                data-tools="HTML, CSS, VSCODE"
+                >
+                <img class="project" src="/src/diploma-frontend-developer_page-0001.jpg">
+              </div>
+            </div>
+            <div class="column project has-text-centered es-opt">
+              <div 
+                class="img-container" 
+                onclick="showProject(this)" 
+                data-title="FRONTEND DEVELOPER"
+                data-link="https://platzi.com/cursos/frontend-developer/"
+                data-desc="Domina las bases de HTML y CSS. Conoce la anatomía de un documento HTML, 
+                sus elementos y las propiedades de CSS. Maqueta las pantallas principales 
+                de tu página web con responsive design. ¡Conviertete en Frontend Developer con Platzi."
+                data-tools="HTML, CSS, VSCODE"
+                >
+                <img class="project" src="/src/diploma-frontend-developer_page-0001.jpg">
+              </div>
+            </div>
+
+            <!-- PYTHON BASICO -->
+            <div class="column project has-text-centered en-opt">
+              <div 
+                class="img-container" 
+                onclick="showProject(this)" 
+                data-title="PYTHON BASICO"
+                data-link="https://platzi.com/cursos/python/"
+                data-desc="Learn to code from scratch with the fastest growing language on the planet: Python. 
+                Find out what an algorithm is and how one is built. 
+                Master variables, functions, data structures, conditionals, and loops."
+                data-tools="PYTHON, TERMINAL GITBASH, VSCODE"
+                >
+                <img class="project" src="/src/diploma-python_page-0001.jpg">
+              </div>
+            </div>
+            <div class="column project has-text-centered es-opt">
+              <div 
+                class="img-container" 
+                onclick="showProject(this)" 
+                data-title="FRONTEND DEVELOPER"
+                data-link="https://platzi.com/cursos/python/"
+                data-desc="Aprende a programar desde cero con el lenguaje de mayor crecimiento en el planeta: Python. 
+                Descubre qué es un algoritmo y cómo se construye uno. 
+                Domina las variables, funciones, estructuras de datos, los condicionales y ciclos."
+                data-tools="PYTHON, TERMINAL GITBASH, VSCODE"
+                >
+                <img class="project" src="/src/diploma-python_page-0001.jpg">
+              </div>
+            </div>
+
+            <!-- GIT Y GITHUB -->
+            <div class="column project has-text-centered en-opt">
+              <div 
+                class="img-container" 
+                onclick="showProject(this)" 
+                data-title="GIT Y GITHUB"
+                data-link="https://platzi.com/cursos/git-github/"
+                data-desc="Stop versioning your projects using your own version control system. 
+                Better use Git, the quintessential version control system used by the technology industry. 
+                Learn how to work with git, basic concepts, clone a repository, and manage your projects 
+                by hosting them in your local repository and on GitHub."
+                data-tools="GIT, GITHUB, TERMINAL GITBASH"
+                >
+                <img class="project" src="/src/diploma-git-github_page-0001.jpg">
+              </div>
+            </div>
+            <div class="column project has-text-centered es-opt">
+              <div 
+                class="img-container" 
+                onclick="showProject(this)" 
+                data-title="GIT Y GITHUB"
+                data-link="https://platzi.com/cursos/git-github/"
+                data-desc="Deja de versionar tus proyectos usando tu propio sistema de control de versiones. 
+                Mejor usa Git, el sistema de control de versiones por excelencia que utiliza la industria tecnológica. 
+                Aprende a trabajar con git, conceptos básicos, clonar un repositorio y gestionar tus proyectos 
+                alojándolos en tu repositorio local y en GitHub."
+                data-tools="GIT, GITHUB, TERMINAL GITBASH"
+                >
+                <img class="project" src="/src/diploma-git-github_page-0001.jpg">
+              </div>
+            </div>
+
+            <!-- BACKEND -->
+            <div class="column project has-text-centered en-opt">
+              <div 
+                class="img-container" 
+                onclick="showProject(this)" 
+                data-title="INTRODUCCION AL BACKEND"
+                data-link="https://platzi.com/cursos/introduccion-backend/"
+                data-desc="Learn the fundamentals to understand how the web works inside. 
+                So you can start your path in backend development with the programming language of your choice."
+                data-tools="POWERPOINT"
+                >
+                <img class="project" src="/src/diploma-introduccion-backend_page-0001.jpg">
+              </div>
+            </div>
+            <div class="column project has-text-centered es-opt">
+              <div 
+                class="img-container" 
+                onclick="showProject(this)" 
+                data-title="INTRODUCCION AL BACKEND"
+                data-link="https://platzi.com/cursos/introduccion-backend/"
+                data-desc="Aprende los fundamentos para entender cómo funciona la web por dentro. 
+                Así podrás comenzar tu camino en el desarrollo backend con el lenguaje de programación que prefieras."
+                data-tools="POWERPOINT"
+                >
+                <img class="project" src="/src/diploma-introduccion-backend_page-0001.jpg">
+              </div>
+            </div>
+
+            <!-- HTML Y CSS -->
+            <div class="column project has-text-centered en-opt">
+              <div 
+                class="img-container" 
+                onclick="showProject(this)" 
+                data-title="HTML Y CSS"
+                data-link="https://platzi.com/cursos/html-css/"
+                data-desc="Learn HTML and CSS from scratch, without prior knowledge. Learn all about HTML tags, semantics, CSS, 
+                how to style your website elements, EM/REM measurements, box model and much more. 
+                You will learn everything you need to start online web development and build internet sites efficiently."
+                data-tools="HTML, CSS, Javascript"
+                >
+                <img class="project" src="/src/diploma-html-css_page-0001.jpg">
+              </div>
+            </div>
+            <div class="column project has-text-centered es-opt">
+              <div 
+                class="img-container" 
+                onclick="showProject(this)" 
+                data-title="HTML Y CSS"
+                data-link="https://platzi.com/cursos/html-css/"
+                data-desc="Aprende HTML y CSS desde cero, sin conocimientos previos. Conoce todo sobre etiquetas HTML, semántica, CSS, 
+                como dar estilos a los elementos de tu sitio web, medidas EM/REM, modelo de caja y mucho más. 
+                Aprenderás todo lo que necesitas para empezar en el desarrollo web online y a construir sitios para internet de manera eficiente."
+                data-tools="HTML, CSS, Javascript"
+                >
+                <img class="project" src="/src/diploma-html-css_page-0001.jpg">
+              </div>
+            </div>
+
+            <!-- PYTHON PRO -->
+            <div class="column project has-text-centered en-opt">
+              <div 
+                class="img-container" 
+                onclick="showProject(this)" 
+                data-title="PYTHON PROFESIONAL"
+                data-link="https://platzi.com/cursos/python-profesional/"
+                data-desc="Complete your learning about this vast programming language. Master the concepts that will lead 
+                you to the necessary conditions to start your career in the technology industry of your choice: Backend, Data Science, Artificial Intelligence."
+                data-tools="PYTHON, TERMINAL GITBASH"
+                >
+                <img class="project" src="/src/diploma-python-profesional_page-0001.jpg">
+              </div>
+            </div>
+            <div class="column project has-text-centered es-opt">
+              <div 
+                class="img-container" 
+                onclick="showProject(this)" 
+                data-title="PYTHON PROFESIONAL"
+                data-link="https://platzi.com/cursos/python-profesional/"
+                data-desc="Culmina tu aprendizaje sobre este vasto lenguaje de programación. Domina los conceptos que te llevarán a las 
+                condiciones necesarias para iniciar tu camino en la carrera de la industria tecnológica que prefieras: Backend, Ciencia de Datos, Inteligencia Artificial."
+                data-tools="HTML, CSS"
+                >
+                <img class="project" src="/src/diploma-python-profesional_page-0001.jpg">
+              </div>
+            </div>
+
+            <!-- Add more... -->
+          </div>
+        </div>   
+      </div>
+    </div>
+    <div id="project-popup" class="hero project d-none">
+      <div class="hero-body is-flex center-y">
+        <a class="close project" onclick="closeProject()">&times;</a>
+        <div class="container">
+          <div class="columns">
+            <div class="column is-two-thirds is-flex center-y">
+              <a id="project-link" target="_blank">
+                <img class="img-project" id="project-img">
+              </a>
+            </div>
+            <div class="column project-desc">
+              <h4 class="title is-4" id="project-name"></h4>
+              <div class="characteristics">
+                <div class="container">
+                  <h5 class="subtitle is-5 en-opt">Technologies</h5>
+                  <h5 class="subtitle is-5 es-opt">Tecnologías</h5>
+                  <ul class="lis" id="project-list">
+                  </ul>
+                </div>
+    
+                <div class="container">
+                  <h5 class="subtitle is-5 en-opt">About the Course?</h5>
+                  <h5 class="subtitle is-5 es-opt">¿Acerca del Curso?</h5>
+                  <h6 class="subtitle is-6" id="project-desc"></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Datos de contacto</h6>
+          <li><a href="mailto:yampuezandylan04@gmail.com">Enviame un correo</a></li>
+          <p></p>
+          <h4>Abajo dejo los enlaces a mis redes sociales</h4>
+        </div>
+
+
+        <div class="col-xs-6 col-md-3">
+          <h6 id="contact">Accesos Rapidos</h6>
+          <ul class="footer-links">
+            <li><a href="#principal">Principal</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Courses</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="#">Scanfcode</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.facebook.com/dylanantonio.yampuezan/" target="_blank"><i class="fab fa-facebook-f"></i>
+            <li><a class="twitter" href="https://www.instagram.com/dylan.03__0/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a class="dribbble" href="https://github.com/DylanYam033" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/in/dylan-yampuezan-527407245?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6PQVo2PgTsSkWCWz%2BOm03A%3D%3D" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+  
+  <!-- Loader -->
+  <div id="loader_ctn">
+    <img src="src/gif/loader.svg" alt="">
+  </div>
+</body>
+<script src="js/index.js"></script>
+</html>
