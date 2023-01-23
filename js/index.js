@@ -94,7 +94,6 @@ function onScroll() {
 function openReadMore(id) {
   let readMoreTXT = document.getElementById(id)
   let readMoreSection = document.getElementById(id + '-section')
-  console.log("You're curious 👀")
   readMoreTXT.style.display = 'none'
   readMoreSection.style.display = 'block'
 }
@@ -110,7 +109,6 @@ function seeMoreSkills() {
 
   moreSkills_0.classList.replace('d-none', 'd-block')
   moreSkillsBtn_0.style.display = 'none'
-  console.log('There are the technologies that I saw 🐶')
 }
 
 /**********************************************/
@@ -171,7 +169,6 @@ function seeMoreProjects() {
 
   moreProjects_0.style.display = 'block'
   moreProjectsBtn_0.style.display = 'none'
-  console.log('There are the projects that I\'ve done 🐶')
 }
 
 /**********************************************/
